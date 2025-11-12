@@ -1,4 +1,4 @@
-const CACHE = 'caixa-v1';
+const CACHE = 'livrocaixa-v1';
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(cache => cache.addAll([
     '/', 'index.html', 'app.js', 'manifest.json'
